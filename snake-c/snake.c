@@ -137,8 +137,8 @@ void snakeMove(Snake *head, Snake *rear, char c){
 	}
 	else if (c == 'a'){
 		head->x -= 1;
-		if (head->x >= WIDTH)
-			head->x -= WIDTH;
+		if (head->x >= LENGTH)
+			head->x -= LENGTH;
 	}
 	else if (c == 'w'){
 		head->y -= 1;
@@ -147,8 +147,8 @@ void snakeMove(Snake *head, Snake *rear, char c){
 	}
 	else if (c == 'd'){
 		head->x += 1;
-		if (head->x >= WIDTH)
-			head->x -= WIDTH;
+		if (head->x >= LENGTH)
+			head->x -= LENGTH;
 	}
 }
 
@@ -158,7 +158,7 @@ void drawPicture(Snake *head, Food *food){
 	int flag;
 	Snake *pt;
 	system("cls");
-	printf("--------------------------------------------\n");  //ªÊ÷∆…œŒß«Ω
+	printf("------------------------------------------\n");  //ªÊ÷∆…œŒß«Ω
 	for (int j = 0; j < WIDTH; j++){
 		printf("|");										  //ªÊ÷∆◊ÛŒß«Ω
 		for (int i = 0; i < LENGTH; i++){
@@ -187,7 +187,7 @@ void drawPicture(Snake *head, Food *food){
 		printf("|");								//ªÊ÷∆”“Œß«Ω
 		putchar('\n');
 	}
-	printf("--------------------------------------------\n");	//ªÊ÷∆œ¬Œß«Ω
+	printf("------------------------------------------\n");	//ªÊ÷∆œ¬Œß«Ω
 }
 
 
